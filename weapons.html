@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" /></head>
+<style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+}
+
+#arsenal-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px;
+}
+
+.weapon-card {
+  position: relative;
+  flex-basis: 33%;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.weapon-card img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.weapon-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.635);
+  color: #fff;
+  padding: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.weapon-card:hover img {
+  transform: translateX(30%);
+}
+
+.weapon-card:hover .overlay {
+  transform: translateX(0);
+}
+
+.overlay h2, .overlay p {
+  margin-bottom: 10px;
+}
+.topnav {
+  background-color: black;
+  width: 100%;
+}
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 32px 27px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+.dropdown {
+  overflow: hidden;
+  float: right;
+  text-align: center;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px; 
+  border: none;
+  outline: none; 
+  color: white;
+   padding: 32px 24px;
+   background-color: inherit;
+  font-family: 'Times New Roman', Times, serif;
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 30px;
+}
+
+.social-icons a:hover {
+   color: #a9a9a9;
+}
+.text{
+  color:white;
+  text-align: center;
+}
+
+</style>
+<head>
+  <title>WEAPONS</title>
+  <div class="topnav">
+    <img src="zonedout.gif" width="250" height="85" >
+    <a href="login.html">PLAY</a>
+    <a href="store.html">MERCH</a>
+    <a href="backstory!.html">BACKSTORY</a>
+    <a class="active" href="homepage.html">HOME</a>
+    <div class="dropdown">
+      <button class="dropbtn">GAME INFO</button>
+      <div class="dropdown-content">
+        <a href="characters.html">CHARACTERS</a>
+        <a href="levels.html">LEVELS</a>
+        <a href="spacemap.html">MAPS</a>
+        <a href="weapons.html">ARTILLERY</a>
+      </div>
+  </div></div>
+</head>
+<body background="wbg.jpg" style="background-size: cover;">
+  <header>
+    <h1 style="border-top:white 1px;">ZONED OUT ARTILLERY</h1>
+  </header>
+  <h1 style="font-family: Impact; text-shadow: #fff 4px 4px;font-size: 60px;">&nbsp; &nbsp;SIDEARMS</h1>
+  <div id="arsenal-container">
+    <div class="weapon-card">
+      <img src="gun1.png" alt="Weapon 1">
+      <div class="overlay">
+        <h2>SHORTY</h2>
+        <p>A short barrel gun</p>
+      </div>
+  </div>  
+    <div class="weapon-card">
+      <img src="gun2.png" alt="Weapon 2">
+      <div class="overlay">
+        <h2>CLASSIC</h2>
+        <p>Primary fire mode</p>
+      </div>
+    </div>
+
+    <div class="weapon-card">
+      <img src="gun3.png" alt="Weapon 3">
+      <div class="overlay">
+        <h2>FRENZY</h2>
+        <p>Light-weight machine pistol</p>
+      </div>
+     </div>
+    </div><br>
+    <h1 style="font-family: Impact; text-shadow: #fff 4px 4px;font-size: 60px;">&nbsp; &nbsp;RIFLES</h1>
+  <div id="arsenal-container">
+    <div class="weapon-card">
+      <img src="gun4.png" alt="Weapon 1">
+      <div class="overlay">
+        <h2>GHOST</h2>
+        <p>Accurate shots</p>
+      </div>
+    </div>
+    <div class="weapon-card">
+      <img src="gun9.png" alt="Weapon 2">
+      <div class="overlay">
+        <h2>STINGER</h2>
+        <p>Long range SMG</p>
+      </div>
+    </div>
+
+    <div class="weapon-card">
+      <img src="gun6.png" alt="Weapon 3">
+      <div class="overlay">
+        <h2>SHERIFF</h2>
+        <p>HIGH IMPACT ROUNDS</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h1 style="font-family: Impact; text-shadow: #fff 4px 4px;font-size: 60px;">&nbsp; &nbsp;SHOTGUNS</h1>
+  <div id="arsenal-container">
+    <div class="weapon-card">
+      <img src="gun5.png" alt="Weapon 1">
+      <div class="overlay">
+        <h2>SPECTRE</h2>
+        <p>Jack of all trades weapon</p>
+      </div>
+    </div>
+
+    <div class="weapon-card">
+      <img src="gun8.png" alt="Weapon 2">
+      <div class="overlay">
+        <h2>BULLDOG</h2>
+        <p>SUREFIRE BEAST</p>
+      </div>
+    </div>
+
+    <div class="weapon-card">
+      <img src="valorant-standard-ares-weapon-skin.png" alt="Weapon 3">
+      <div class="overlay">
+        <h2>JUDGE</h2>
+        <p>Stable at the stand but volatile when fired rapidly</p>
+      </div>
+    </div>
+  </div>
+  <h1 style="font-family: Impact; text-shadow: #fff 4px 4px;font-size: 60px;">&nbsp; &nbsp;MELEE</h1>
+  <div id="arsenal-container">
+    <div class="weapon-card">
+      <img src="knife1.png" alt="Weapon 1">
+      <div class="overlay">
+        <h2>TACTICAL KNIFE</h2>
+        <p>An Intimate Solution</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
